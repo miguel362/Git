@@ -44,6 +44,7 @@ git add . (para todos los archivos).
 Una vez hayamos hecho las modificaciones pertinentes para almacenar de forma definitiva el archivo utilizamos el siguiente comando...
 
 git commit -m "descripción_del archivo"
+
 Si quieres en una sóla acción hacer un git add + git commit utilizamos el siguiente comando...
 
 git commit -am "descripción"
@@ -92,5 +93,24 @@ git reset --hard (id del commit al que quieres regresar)
 				--------------------------------
 
 Cómo subir un proyecto a Git hub?...el hacerlo te asegura de que si tienes algún problema en tu equipo que provoque perder un proyecto lo tendrás siempre disponible en la nube de Git hub.
+
+				--------------------------------
+
+Como modificar una descripción de un commit??
+
+Para ello utilizamos el siguiente comando para abrir vin...
+
+git commit --amend
+
+Una vez dentro ejecutamos el comando :i para poder eliminar la descripción.
+Una vez eliminada le damos a la tecla Esc.
+Volvemos a ejecutar :i.
+Añadimos la descripción que queramos.
+Le damos a intro y después la tecla Esc.
+Ejecutamos :wq para guardar y salir.
+
+				---------------------------------
+
+
 
 
