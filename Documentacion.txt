@@ -1,0 +1,96 @@
+GIT
+
+Git es un software de control de versiones, es libre. Sirve para facilitar el desarrollo y mantenimiento de las
+aplicaciones que podamos elaborar tanto individualmente como si la elaboración la efectua un equipo de trabajo.
+Git guarda un registro de todos los cambios que sufren los archivos.
+
+			---------------------------------------------------------
+
+Para ver la documentación de git y todos los comandos con los que se puede trabajar nos vamos
+al navegador y ponemos la siguiente dirección...
+
+https://git-smc.com
+
+Una vez dentro seleccionamos Documentation, dentro seleccionamos Reference Manual y por último
+Complete list of all commands.
+
+			---------------------------------------------------------
+
+Uso de git
+
+Lo primero es instalar git en tu sistema operativo, con ello podrás utilizar la consola de comandos (git bash),
+para realizar las modificaciones,seguimientos,... de los proyectos en los que estés trabajando.
+
+Para comenzar, creamos una carpeta donde meteremos todos los archivos que pertenezcan al proyecto. Dentro de esa carpeta,
+para empezar a trabajar con git, clicamos el botón derecho del ratón, y si hemos instalado correctamente git nos saldrá
+la opción "git bash here"...seleccionandola nos saldrá la consola de git bash para poder trabajar en el proyecto desde 
+dicha carpeta, que es lo que nos interesa.
+
+Cuando comenzamos un proyecto al que queremos hacerle un seguimiento con git en el git bash hay que utilizar el siguiente comando.... 
+
+git init
+
+Este comando sólo se ejecuta una vez cuando comenzamos el proyecto, con él conseguimos que git cree dos áreas, staging area
+(área temporal en el que se encuentran los archivos y se les hace un seguimiento antes de almacenarlas en el repositorio local)
+y el repositorio local (donde se almacenan esas fotos fijas y que podremos rescatar cuando nos interese).
+
+				--------------------------------
+
+Se puede hacer un seguimiento a todos los archivos que uno quiera. Para hacer el seguimiento de un archivo hay que utilizar el siguiente comando...
+
+git add nombre_archivo (para un sólo archivo).
+git add . (para todos los archivos).
+
+Una vez hayamos hecho las modificaciones pertinentes para almacenar de forma definitiva el archivo utilizamos el siguiente comando...
+
+git commit -m "descripción_del archivo"
+Si quieres en una sóla acción hacer un git add + git commit utilizamos el siguiente comando...
+
+git commit -am "descripción"
+
+				-----------------------------------
+
+Para poder comprobar que git tiene constancia de los archivos aunque no les esté haciendo un seguimiento utilizamos el siguiente comando...
+
+git status -s
+
+Una vez realizado este comando saldrá un listado de los archivos y directorios de los que consta el proyecto con un símbolo a su izquierda.
+
+?? --> este símbolo indica que no le está haciendo seguimiento(que no se ha añadido al staging area).
+A --> este símbolo indica que git le está haciendo seguimiento(está dentro del staging area).
+M en color rojo --> este símbolo indica que se le ha hecho alguna modificación pero no se añadido al staging area.
+M en color verde --> indica que se le ha hecho alguna modificación y está dentro del staging area.
+
+Una vez un archivo/directorio se encuentra en el staging area se puede hacer un commit, no se puede hacer un commit sin tener nada en el staging area.
+
+				------------------------------- 
+
+Una vez hacemos el primer commit git bash nos pedirá información acerca de nosotros(nombre y email),por lo que tendremos que ejecutar los siguientes comandos...
+
+ git config --global user.name "Nombre"
+ git config --global user.email "Mail"
+
+				--------------------------------
+
+Después de haber el hecho el commit  si ejecutamos git status -s sólo los elementos a los que se les
+ha hecho el commit no estarán debido a que están en el repositorio local...sólo aparecerá aquello
+que no está en el repositorio local. 
+
+				--------------------------------
+
+Para poder ver un listado con los commits realizados utilizamos el comando siguiente...
+
+git log --oneline (este comando te enseña la descripción y el id).
+git log (este comando te enseña el id, el autor, la fecha y la descripción).
+
+				--------------------------------
+
+Para restaurar un proyecto en el punto que yo quiera,o lo que es lo mismo, para volver a otro comit utilizamos el siguiente comando...
+
+git reset --hard (id del commit al que quieres regresar)
+
+				--------------------------------
+
+Cómo subir un proyecto a Git hub?...el hacerlo te asegura de que si tienes algún problema en tu equipo que provoque perder un proyecto lo tendrás siempre disponible en la nube de Git hub.
+
+
