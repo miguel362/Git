@@ -45,7 +45,7 @@ Una vez hayamos hecho las modificaciones pertinentes para almacenar de forma def
 
 git commit -m "descripción_del archivo"
 
-Si quieres en una sóla acción hacer un git add + git commit utilizamos el siguiente comando...
+Si quieres en una sóla acción hacer git add + git commit utilizamos el siguiente comando...
 
 git commit -am "descripción"
 
@@ -94,6 +94,8 @@ git reset --hard (id del commit al que quieres regresar)
 
 Cómo subir un proyecto a Git hub?...el hacerlo te asegura de que si tienes algún problema en tu equipo que provoque perder un proyecto lo tendrás siempre disponible en la nube de Git hub.
 
+Vamos a la página web de Github, si no estamos registrados nos registramos, una vez registrados, creamos un repositorio nuevo y para subirlo seguimos las instrucciones que nos dice...hay 3 opciones,elegimos la correcta y ejecutamos los comandos git.
+
 				--------------------------------
 
 Como modificar una descripción de un commit??
@@ -111,6 +113,31 @@ Ejecutamos :wq para guardar y salir.
 
 				---------------------------------
 
+Para recuperar un proyecto desde github utilizamos el siguiente comando...
+
+git pull
+
+				---------------------------------
+
+Se puede modificar el código de un archivo desde github.
+
+				---------------------------------
+
+Cuando un proyecto se encuentra finalizado, sabemos que siempre, más adelante surgen actualizaciones, modificaciones,...pero una vez lo tenemos acabado podemos llamarlo versión 1.0 por ejemplo, para ir guardando nuestras versiones tendremos que crear las tags(etiquetas), utilizando los siguientes comandos...
+
+git tag nombre_etiqueta -m "descripción" /para crearla.
+git push --tags /para subirla al repositorio.
+
+Una vez hecho, Github nos da la opción de entrar en los tags y descargarnos el proyecto entero.
+
+				---------------------------------
+
+También tenemos la opción de clonar un repositorio para recuperar un proyecto en el que se está trabajando...para ello utilizamos el siguiente c0omando...
+
+git clone url del repositorio en cuestión.
+
+La url del repositorio nos la proporciona github si pulsamos al botón code de color verde.				
+	
 
 
 
