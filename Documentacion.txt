@@ -136,8 +136,32 @@ También tenemos la opción de clonar un repositorio para recuperar un proyecto 
 
 git clone url del repositorio en cuestión.
 
-La url del repositorio nos la proporciona github si pulsamos al botón code de color verde.				
-	
+La url del repositorio nos la proporciona github si pulsamos al botón code de color verde.
+
+				---------------------------------
+
+Para ir añadiendo commits al repositorio de github una vez ya creado el repositorio y estando el proyecto en la nube utilizaremos el siguiente comando...
+
+git push
+
+				---------------------------------
+
+Rama o Branch
+
+Las ramas o branches son copias del proyecto con el que se está trabajando y sirven para poder realizar pruebas o modificaciones sin alterar el proyecto original.
+
+Se pueden realizar tantas ramas como quieras, cuantas más ramas más complejo se hace el realizar un merge.
+
+Una vez has creado una rama para realizar pruebas y ves que la prueba sale bien, para pasar los cambios al proyecto original se realiza un merge.
+
+Puedes modificar tanto la rama master como cualquier otra rama al mismo tiempo, pero hay que ir con cuidado con los merge porque pueden surgir conflictos al haber modificado lo mismo tanto en una rama como en otra.
+
+Comandos
+
+git branch nombre_de_la_rama --> Creas una rama con el nombre que le has indicado.
+git branch --> Lista las ramas que tienes en el proyecto.
+git checkout nombre_rama --> Te posicionas en la rama con el nombre que le indicas.
+git merge nombre_rama --> Fusionas la rama master con la rama con nombre que le indicas.(El merge siempre hay que hacerlo situado en la rama master).
 
 
 
